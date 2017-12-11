@@ -24,7 +24,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/login'
     },
     {
       path: '/home',
@@ -108,6 +108,12 @@ export default new Router({
       component: resolve => require(['../pages/personCenter/MessageDetail'],resolve),
       //component: PersonCenter,
       meta: {footerShow: false,headerShow:true,titleName:'消息详情'}
+    },
+    {
+      path: '/sendAddress',
+      name: 'SendAddress',
+      component: resolve => require(['../pages/personCenter/SendAddress'],resolve),
+      meta: {footerShow: false,headerShow:true,titleName:'发件人常用地址'}
     },
     {
       path: '/more',

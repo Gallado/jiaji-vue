@@ -12,11 +12,11 @@
     </div>
     <div class="another_info">
       <ul>
-        <li ng-click="goIntegral()">
+        <li @click="goIntegral()">
           <p>203</p>
           <p>积分</p>
         </li>
-        <li ng-click="goCoupon()">
+        <li @click="goCoupon()">
           <p>0</p>
           <p>优惠券</p>
         </li>
@@ -24,7 +24,7 @@
     </div>
     <div class="person_list">
       <ul>
-        <li class="b-t-n">
+        <li class="b-t-n" @click="commonAddress()">
           <div class="itemIcon">
             <i class="icon send"></i>
           </div>
@@ -93,7 +93,17 @@
       },
       goMessageCenter(){
         this.$router.push({path:'/messageCenter'});
+      },
+      goIntegral(){
+        this.$router.push({path:'/integral'})
+      },
+      goCoupon(){
+        this.$router.push({path:'/coupon'});
+      },
+      commonAddress(){
+        this.$router.push({path:'/sendAddress'});
       }
+
     },
     // 在components字段中，包含导入的子组件
     components: {
