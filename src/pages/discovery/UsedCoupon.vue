@@ -1,12 +1,9 @@
 
 <!-- Home.vue -->
 <template>
-
-
-
-
+  <div class="coupon_content">
       <p>111111</p>
-
+  </div>
 </template>
 
 <script>
@@ -38,13 +35,13 @@
 </script>
 
 <style>
-  .content{
+  .coupon_content{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-  }
-  .coupon_content{
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
 
   }
 

@@ -15,7 +15,7 @@
     </div>
     <div class="delivery_list">
       <ul>
-        <li ng-click="goIntegral()">
+        <li @click="goIntegral()">
           <div class="itemIcon">
             <i class="icon integral"></i>
           </div>
@@ -51,11 +51,11 @@
       //this.setTitle();
     },
     methods:{
-      /*setTitle () {
-        this.$store.dispatch('setTitle', '安全签报');
-      },*/
       goCoupon(){
         this.$router.push({path:'/coupon'});
+      },
+      goIntegral(){
+        this.$router.push({path:'/integral'});
       }
     },
     // 在components字段中，包含导入的子组件

@@ -162,7 +162,7 @@
     border-radius: 50px;
 
   }
-  ul li .item_info{
+ .item_info{
     flex:1;
     display: flex;
     flex-direction: column;
@@ -171,7 +171,7 @@
 
 
   }
-  ul li .item_info p{
+  .item_info p{
 
   }
 

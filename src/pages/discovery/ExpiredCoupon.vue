@@ -1,7 +1,9 @@
 
 <!-- Home.vue -->
 <template>
-  <p>333333</p>
+  <div class="coupon_content">
+      <p>333333</p>
+  </div>
 
 </template>
 

@@ -82,8 +82,12 @@ export default new Router({
         }
         ]
     },
-
-
+    {
+      path: '/integral',
+      name: 'Integral',
+      component: resolve => require(['../pages/discovery/Integral'],resolve),
+      meta: {footerShow: false,headerShow:true,titleName:'我的积分'}
+    },
     {
       path: '/personCenter',
       name: 'PersonCenter',
