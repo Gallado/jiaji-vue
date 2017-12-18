@@ -34,7 +34,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .coupon_content{
     width: 100%;
     height: 100%;
